@@ -1,0 +1,26 @@
+.button {
+  background-color: var(--primary-yellow);
+  color: var(--primary-white);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--secondary-yellow);
+  }
+}
+
+.basket-btn {
+  background-color: transparent;
+  border: none;
+  fill: var(--primary-yellow);
+  cursor: pointer;
+
+  &:hover {
+    fill: var(--secondary-yellow);
+  }
+}

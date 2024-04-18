@@ -1,0 +1,21 @@
+// utils
+@import './utils/base';
+@import './utils/fonts';
+@import './utils/variables';
+
+// components
+@import './components/buttons';
+@import './components/links';
+
+// layouts
+@import './layouts/header';
+@import './layouts/hero-section';
+
+
+
+.section-title {
+  font-family: 'Rowdies', sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.2;
+}

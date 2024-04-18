@@ -1,0 +1,33 @@
+.header {
+  position: absolute;
+  width: 100%;
+  &__flex-container {
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  &__logo-box {
+    flex-grow: 1;
+  }
+
+  &__nav {
+    flex-grow: 2;
+  }
+
+  &__link-list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 12px;
+  }
+
+  &__btns-box {
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+    align-items: center;
+    gap: 24px;
+  }
+}

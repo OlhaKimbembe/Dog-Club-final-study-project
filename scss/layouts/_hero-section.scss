@@ -1,0 +1,83 @@
+.hero-section {
+  background: no-repeat  url(/images/hero-back.png);
+  background-size: cover;
+  background-position: bottom right;
+
+  padding: 236px 0 65px;
+
+  &__flex-container {
+    display: flex;
+    gap: 65px;
+
+  }
+
+  &__left-box {
+    max-width: 635px;
+    position: relative;
+  }
+
+  &__decor-one {
+    position: absolute;
+    right: 62px;
+    bottom: 234px;
+  }
+
+  &__decor-two {
+    position: absolute;
+    right: 42px;
+    bottom: 86px;
+  }
+
+  &__title {
+    position: relative;
+    font-family: 'Rowdies', sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 40px;
+
+    &::before {
+      content: '';
+      background-image: url(/images/arrow.png);
+      width: 67px;
+      height: 52px;
+      position: absolute;
+      top: -67px;
+      right: 160px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 24px;
+  }
+
+  &__right-box {
+    padding: 84px 26px 0 0;
+    position: relative;
+  }
+
+  &__decor-three {
+    position: absolute;
+    left: 0;
+    top: 112px;
+  }
+
+  &__decor-four {
+    position: absolute;
+    left: 93px;
+    top: 24px;
+  }
+
+  &__decor-five {
+    position: absolute;
+    top: 120px;
+    right: 0;
+  }
+
+  &__decor-six {
+    position: absolute;
+    top: 254px;
+    right: -54px;
+  }
+  
+}
