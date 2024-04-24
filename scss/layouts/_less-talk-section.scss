@@ -1,0 +1,41 @@
+.less-talk-section {
+  padding: 65px 0 50px;
+  background: no-repeat url(../../images/less-talk.png);
+  background-size: cover;
+  background-position: bottom right;
+
+  &__flex-container {
+    display: flex;
+    gap: 84px;
+  }
+
+  &__left-box {
+    position: relative;
+  }
+
+  &__player-btn {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 72px;
+    right: 40px;
+    cursor: pointer;
+    transition: transform .2s;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  &__right-box {
+    padding-top: 84px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+  }
+}
