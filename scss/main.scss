@@ -1,16 +1,23 @@
 // utils
 @import './utils/base';
 @import './utils/fonts';
+@import './utils/utils';
 @import './utils/variables';
 
 // components
 @import './components/buttons';
+@import './components/customer-card';
 @import './components/links';
+@import './components/pagination';
+@import './components/services-card';
 
 // layouts
+@import './layouts/contacts-section';
+@import './layouts/customer-section';
 @import './layouts/header';
 @import './layouts/hero-section';
 @import './layouts/less-talk-section';
+@import './layouts/services-section';
 
 
 
@@ -19,4 +26,8 @@
   font-size: 56px;
   font-weight: 400;
   line-height: 1.2;
+
+  &--centred {
+    text-align: center;
+  }
 }

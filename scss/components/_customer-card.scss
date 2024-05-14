@@ -1,0 +1,64 @@
+.customer-card {
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  height: 456px;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__text-block {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px 0 16px;
+    background-color: var(--secondary-grey-blue);
+    color: var(--primary-white);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  &__rate,
+  &__text {
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+
+  &__review {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  &__star-bones {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__bone {
+    fill: var(--secondary-yellow);
+
+    &--white {
+      fill: var(--secondary-blue);
+    }
+  }
+
+  &__rate {
+    color: var(--secondary-yellow);
+    margin: 0;
+  }
+  
+}

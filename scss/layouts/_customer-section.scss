@@ -1,0 +1,23 @@
+.customer-section {
+
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  &__slider {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__container {
+    overflow: hidden;
+  }
+
+  &__list-temperary {
+    display: flex;
+    gap: 16px;
+          
+  }
+}

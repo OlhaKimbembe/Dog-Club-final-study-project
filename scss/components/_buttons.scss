@@ -24,3 +24,21 @@
     fill: var(--secondary-yellow);
   }
 }
+
+.carousel-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--secondary-grey-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  fill: var(--primary-white);
+  flex-shrink: 0;
+
+  &--right {
+    transform: rotate(180deg);
+  }
+}
