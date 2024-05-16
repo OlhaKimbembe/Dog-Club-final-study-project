@@ -1,0 +1,12 @@
+.footer {
+  margin: 110px 0 50px;
+  background-color: var(--secondary-beige);
+
+  &__container {
+    padding-right: 295px;
+  }
+
+  &__icon {
+    fill: var(--primary-yellow);
+  }
+}

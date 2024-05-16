@@ -552,6 +552,9 @@
           </p>
           <form name="contacts-form" autocomplete="off">
             <div class="contacts-section__form-field input">
+              <svg class="input__icon" width="20" height="26">
+                <use href="./images/icons.svg#icon-face"></use>
+              </svg>
               <label class="input__label visually-hidden">Your name</label>
               <input
                 class="input__window"
@@ -559,7 +562,67 @@
                 id="user-name"
                 name="user-name"
                 placeholder="Your name"
+                required
               />
+            </div>
+            <div class="contacts-section__form-field input">
+              <svg class="input__icon" width="21" height="26">
+                <use href="./images/icons.svg#icon-dog"></use>
+              </svg>
+              <label class="input__label visually-hidden">Pet name</label>
+              <input
+                class="input__window"
+                type="text"
+                id="pet-name"
+                name="pet-name"
+                placeholder="Pet name"
+                required
+              />
+            </div>
+            <div class="contacts-section__form-field input">
+              <svg class="input__icon" width="26" height="26">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              <label class="input__label visually-hidden">Your phone</label>
+              <input
+                class="input__window"
+                type="tel"
+                id="user-phone"
+                name="user-phone"
+                placeholder="Your phone"
+                required
+              />
+            </div>
+            <div class="contacts-section__form-field input">
+              <svg class="input__icon" width="26" height="26">
+                <use href="./images/icons.svg#icon-at"></use>
+              </svg>
+              <label class="input__label visually-hidden">Your email</label>
+              <input
+                class="input__window"
+                type="email"
+                id="user-email"
+                name="user-email"
+                placeholder="Your email"
+                required
+              />
+            </div>
+            <button type="submit" class="button contacts-section__btn">
+              Contacts us
+            </button>
+            <div class="contacts-section__checkbox-wrapper">
+              <div class="contacts-section__checkbox checkbox">
+                <input
+                  class="checkbox__window"
+                  type="checkbox"
+                  name="check-agree"
+                  id="check-agree"
+                  required
+                />
+                <label class="checkbox__label" for="check-agree"
+                  >I agree to the privacy policy</label
+                >
+              </div>
             </div>
           </form>
         </div>
@@ -567,26 +630,46 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a href="/">
-          <img
-            class="logo"
-            src="./images/logo.png"
-            srcset="./images/logo.png 1x, ./images/logo@2x.png 2x"
-            alt="company logo"
-        /></a>
-        <ul class="icons-list">
-          <li></li>
-          <li></li>
-        </ul>
-        <nav>
-          <ul>
-            <li><a href="#less-talk-section">Less talk</a></li>
-            <li><a href="#services-section">Services category</a></li>
-            <li><a href="#customer-section">Happy customer</a></li>
-            <li><a href="#contacts-section">Contacts</a></li>
-          </ul>
-        </nav>
-        <form action=""></form>
+        <div class="footer__container">
+          <div>
+            <a href="/">
+              <img
+                class="logo"
+                src="./images/logo.png"
+                srcset="./images/logo.png 1x, ./images/logo@2x.png 2x"
+                alt="company logo"
+            /></a>
+            <ul class="icons-list">
+              <li>
+                <a href="#">
+                  <svg class="footer__icon" width="30" height="30">
+                    <use href="./images/icons.svg#icon-insta"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="footer__icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#less-talk-section" class="link">Less talk</a></li>
+              <li>
+                <a href="#services-section" class="link">Services category</a>
+              </li>
+              <li>
+                <a href="#customer-section" class="link">Happy customer</a>
+              </li>
+              <li><a href="#contacts-section" class="link">Contacts</a></li>
+            </ul>
+          </nav>
+          <form action=""></form>
+        </div>
       </div>
     </footer>
 

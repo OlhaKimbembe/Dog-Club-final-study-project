@@ -1,4 +1,5 @@
 .button {
+  display: block;
   background-color: var(--primary-yellow);
   color: var(--primary-white);
   font-family: 'Roboto', sans-serif;
@@ -37,8 +38,13 @@
   cursor: pointer;
   fill: var(--primary-white);
   flex-shrink: 0;
+  transition: background-color 0.3s;
 
   &--right {
     transform: rotate(180deg);
+  }
+
+  &:hover {
+    background-color: var(--primary-yellow);
   }
 }
