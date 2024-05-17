@@ -114,6 +114,11 @@
         <div class="container">
           <div class="less-talk-section__flex-container">
             <div class="less-talk-section__left-box">
+              <img
+                class="less-talk-section__food-icon"
+                src="./images/food-icon.svg"
+                alt="icon with dog food"
+              />
               <button type="button" class="less-talk-section__player-btn">
                 <img
                   src="./images/video.png"
@@ -631,15 +636,15 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__container">
-          <div>
-            <a href="/">
+          <div class="footer__logo-icons">
+            <a class="footer__logo" href="/">
               <img
                 class="logo"
                 src="./images/logo.png"
                 srcset="./images/logo.png 1x, ./images/logo@2x.png 2x"
                 alt="company logo"
             /></a>
-            <ul class="icons-list">
+            <ul class="footer__icons-list">
               <li>
                 <a href="#">
                   <svg class="footer__icon" width="30" height="30">
@@ -649,7 +654,7 @@
               </li>
               <li>
                 <a href="#">
-                  <svg class="footer__icon" width="32" height="32">
+                  <svg class="footer__icon" width="30" height="30">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
@@ -657,18 +662,76 @@
             </ul>
           </div>
           <nav>
-            <ul>
-              <li><a href="#less-talk-section" class="link">Less talk</a></li>
-              <li>
+            <ul class="footer__links">
+              <li class="footer__links-items">
+                <a href="#less-talk-section" class="link">Less talk</a>
+              </li>
+              <li class="footer__links-items">
                 <a href="#services-section" class="link">Services category</a>
               </li>
-              <li>
+              <li class="footer__links-items">
                 <a href="#customer-section" class="link">Happy customer</a>
               </li>
-              <li><a href="#contacts-section" class="link">Contacts</a></li>
+              <li class="footer__links-items">
+                <a href="#contacts-section" class="link">Contacts</a>
+              </li>
             </ul>
           </nav>
-          <form action=""></form>
+          <form name="footer-form" autocomplete="off">
+            <div class="footer__form-field input input--small">
+              <svg
+                class="input__icon input__icon--small"
+                width="15.5"
+                height="20"
+              >
+                <use href="./images/icons.svg#icon-face"></use>
+              </svg>
+              <label class="input__label visually-hidden"></label>
+              <input
+                class="input__window input__window--small"
+                type="text"
+                id="user-name"
+                name="user-name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="footer__form-field input input--small">
+              <svg
+                class="input__icon input__icon--small"
+                width="20"
+                height="20"
+              >
+                <use href="./images/icons.svg#icon-at"></use>
+              </svg>
+              <label class="input__label visually-hidden"></label>
+              <input
+                class="input__window input__window--small"
+                type="email"
+                id="user-email"
+                name="user-email"
+                placeholder="Your email"
+                required
+              />
+            </div>
+            <button type="submit" class="button button--small footer__btn">
+              Contacts us
+            </button>
+            <div class="contacts-section__checkbox-wrapper">
+              <div class="contacts-section__checkbox checkbox">
+                <input
+                  class="checkbox__window"
+                  type="checkbox"
+                  name="check-agree"
+                  id="check-agree"
+                  required
+                />
+                <label class="checkbox__label" for="check-agree"
+                  >I agree to the privacy policy</label
+                >
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </footer>

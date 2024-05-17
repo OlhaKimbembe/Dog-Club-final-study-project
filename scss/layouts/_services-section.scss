@@ -1,12 +1,13 @@
 .services-section {
   // margin-top: 50px;
-  padding: 
-  50px 0 96px;
+  padding: 51px 0 96px; //96
+  // margin-bottom: -34px;
   // padding-bottom: 96px;
-  background: no-repeat url(/images/services-back.png);
+  background: no-repeat center url(/images/services-back.png);
   background-size: cover;
   // background-position: top left;
   position: relative;
+  z-index: -1;
 
   &__arrow-dec {
     position: absolute;

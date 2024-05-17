@@ -1,8 +1,8 @@
 .less-talk-section {
-  padding: 65px 0 50px;
-  background: no-repeat url(../../images/less-talk.png);
-  background-size: cover;
-  background-position: bottom right;
+  padding: 65px 0 51px;
+  background: no-repeat center bottom url(../../images/less-talk.png);
+  background-size: contain;
+  // background-position: bottom right;
 
   &__flex-container {
     display: flex;
@@ -11,6 +11,12 @@
 
   &__left-box {
     position: relative;
+  }
+
+  &__food-icon {
+    position: absolute;
+    bottom: -30px;
+    left: 220px;
   }
 
   &__player-btn {

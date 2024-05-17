@@ -1,12 +1,54 @@
 .footer {
   margin: 110px 0 50px;
   background-color: var(--secondary-beige);
+  position: relative;
 
   &__container {
-    padding-right: 295px;
+    padding: 32px 295px 32px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icons-list {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__logo {
+    display: flex;
+    margin-bottom: 30px;
   }
 
   &__icon {
     fill: var(--primary-yellow);
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__links-items {
+    display: flex;
+  }
+
+  &__form-field {
+    margin-bottom: 16px;
+  }
+
+  &__btn {
+    margin: 0 auto 16px;
+  }
+
+  &::after {
+    content: '';
+    background-image: url(/images/footer-dog.png);
+    position: absolute;
+    width: 292px;
+    height: 305px;
+    right: 100px;
+    bottom: -46px;
+
   }
 }

@@ -1,4 +1,6 @@
 .customer-section {
+  background:no-repeat url(/images/customer-back.png);
+  background-size: contain;
 
   &__title {
     margin-bottom: 48px;
